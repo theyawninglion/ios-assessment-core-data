@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4A231D1CCA8D2C003A4350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A231C1CCA8D2C003A4350 /* AppDelegate.swift */; };
-		1A4A23221CCA8D2C003A4350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A23201CCA8D2C003A4350 /* Main.storyboard */; };
-		1A4A23241CCA8D2C003A4350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A23231CCA8D2C003A4350 /* Assets.xcassets */; };
-		1A4A23271CCA8D2C003A4350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A23251CCA8D2C003A4350 /* LaunchScreen.storyboard */; };
+		9DF1383F1E4CDE8C00AF0400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF138371E4CDE8C00AF0400 /* Assets.xcassets */; };
+		9DF138401E4CDE8C00AF0400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF138381E4CDE8C00AF0400 /* LaunchScreen.storyboard */; };
+		9DF138411E4CDE8C00AF0400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF1383A1E4CDE8C00AF0400 /* Main.storyboard */; };
+		9DF138431E4CDE8C00AF0400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF1383E1E4CDE8C00AF0400 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A4A23191CCA8D2C003A4350 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A4A231C1CCA8D2C003A4350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A4A23211CCA8D2C003A4350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A4A23231CCA8D2C003A4350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A4A23261CCA8D2C003A4350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A4A23281CCA8D2C003A4350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF138371E4CDE8C00AF0400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DF138391E4CDE8C00AF0400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DF1383B1E4CDE8C00AF0400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DF1383C1E4CDE8C00AF0400 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF1383E1E4CDE8C00AF0400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,8 @@
 		1A4A23101CCA8D2C003A4350 = {
 			isa = PBXGroup;
 			children = (
-				1A4A231B1CCA8D2C003A4350 /* ShoppingList */,
+				9DF1383D1E4CDE8C00AF0400 /* Sources */,
+				9DF138361E4CDE8C00AF0400 /* Resources */,
 				1A4A231A1CCA8D2C003A4350 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,16 +50,63 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A4A231B1CCA8D2C003A4350 /* ShoppingList */ = {
+		9DF138361E4CDE8C00AF0400 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1A4A231C1CCA8D2C003A4350 /* AppDelegate.swift */,
-				1A4A23201CCA8D2C003A4350 /* Main.storyboard */,
-				1A4A23231CCA8D2C003A4350 /* Assets.xcassets */,
-				1A4A23251CCA8D2C003A4350 /* LaunchScreen.storyboard */,
-				1A4A23281CCA8D2C003A4350 /* Info.plist */,
+				9DF138441E4CDE9200AF0400 /* Storyboardfs */,
+				9DF138371E4CDE8C00AF0400 /* Assets.xcassets */,
+				9DF1383C1E4CDE8C00AF0400 /* Info.plist */,
 			);
-			path = ShoppingList;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DF1383D1E4CDE8C00AF0400 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9DF1383E1E4CDE8C00AF0400 /* AppDelegate.swift */,
+				9DF138451E4CDEA500AF0400 /* Model */,
+				9DF138491E4CDEB800AF0400 /* Model Controllers */,
+				9DF138471E4CDEAC00AF0400 /* View Controllers */,
+				9DF138481E4CDEB800AF0400 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9DF138441E4CDE9200AF0400 /* Storyboardfs */ = {
+			isa = PBXGroup;
+			children = (
+				9DF138381E4CDE8C00AF0400 /* LaunchScreen.storyboard */,
+				9DF1383A1E4CDE8C00AF0400 /* Main.storyboard */,
+			);
+			name = Storyboardfs;
+			sourceTree = "<group>";
+		};
+		9DF138451E4CDEA500AF0400 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9DF138471E4CDEAC00AF0400 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9DF138481E4CDEB800AF0400 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9DF138491E4CDEB800AF0400 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4A23271CCA8D2C003A4350 /* LaunchScreen.storyboard in Resources */,
-				1A4A23241CCA8D2C003A4350 /* Assets.xcassets in Resources */,
-				1A4A23221CCA8D2C003A4350 /* Main.storyboard in Resources */,
+				9DF138411E4CDE8C00AF0400 /* Main.storyboard in Resources */,
+				9DF1383F1E4CDE8C00AF0400 /* Assets.xcassets in Resources */,
+				9DF138401E4CDE8C00AF0400 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,27 +181,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4A231D1CCA8D2C003A4350 /* AppDelegate.swift in Sources */,
+				9DF138431E4CDE8C00AF0400 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A4A23201CCA8D2C003A4350 /* Main.storyboard */ = {
+		9DF138381E4CDE8C00AF0400 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A4A23211CCA8D2C003A4350 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A4A23251CCA8D2C003A4350 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A4A23261CCA8D2C003A4350 /* Base */,
+				9DF138391E4CDE8C00AF0400 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9DF1383A1E4CDE8C00AF0400 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF1383B1E4CDE8C00AF0400 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,7 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmountain.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,7 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmountain.ShoppingList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
