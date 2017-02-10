@@ -27,34 +27,47 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ol-nt-juU">
-                                            <rect key="frame" x="59" y="8" width="300" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kR-gv-2fG">
-                                            <rect key="frame" x="8" y="0.0" width="43" height="43"/>
+                                            <rect key="frame" x="8" y="8" width="27" height="27"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="2kR-gv-2fG" secondAttribute="height" multiplier="1:1" id="v1t-xg-5er"/>
+                                                <constraint firstAttribute="width" secondItem="2kR-gv-2fG" secondAttribute="height" multiplier="1:1" id="zaD-cc-dFm"/>
                                             </constraints>
                                             <state key="normal" image="incomplete"/>
                                             <connections>
                                                 <action selector="gotItButtonTapped:" destination="yON-yH-4CP" eventType="touchUpInside" id="27V-wP-8Ao"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ol-nt-juU">
+                                            <rect key="frame" x="43" y="8" width="216" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Due date:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0R-9w-SNT">
+                                            <rect key="frame" x="267" y="0.0" width="100" height="43"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="sbg-mz-A2J"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="7ol-nt-juU" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="topMargin" id="3rY-d3-aq3"/>
-                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="leading" secondItem="EXE-L9-n7g" secondAttribute="leading" constant="8" id="5Yg-M0-QG2"/>
-                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="top" id="JWA-y6-cgB"/>
-                                        <constraint firstItem="7ol-nt-juU" firstAttribute="bottom" secondItem="EXE-L9-n7g" secondAttribute="bottomMargin" id="QDJ-Dt-7qC"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="7ol-nt-juU" secondAttribute="trailing" constant="8" id="ak3-ZI-cfY"/>
-                                        <constraint firstItem="7ol-nt-juU" firstAttribute="leading" secondItem="2kR-gv-2fG" secondAttribute="trailing" constant="8" id="dkP-o7-k6U"/>
-                                        <constraint firstAttribute="bottom" secondItem="2kR-gv-2fG" secondAttribute="bottom" id="giH-rj-tgT"/>
+                                        <constraint firstAttribute="bottom" secondItem="n0R-9w-SNT" secondAttribute="bottom" id="7c4-49-Wip"/>
+                                        <constraint firstItem="7ol-nt-juU" firstAttribute="bottom" secondItem="EXE-L9-n7g" secondAttribute="bottomMargin" id="Cpf-LR-rJ2"/>
+                                        <constraint firstItem="7ol-nt-juU" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="topMargin" id="DYk-bq-046"/>
+                                        <constraint firstAttribute="bottom" secondItem="2kR-gv-2fG" secondAttribute="bottom" constant="8" id="Fzo-ob-p6Q"/>
+                                        <constraint firstAttribute="trailing" secondItem="n0R-9w-SNT" secondAttribute="trailing" constant="8" id="Gba-L5-onM"/>
+                                        <constraint firstItem="n0R-9w-SNT" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="top" id="IC0-hb-2I3"/>
+                                        <constraint firstItem="7ol-nt-juU" firstAttribute="leading" secondItem="2kR-gv-2fG" secondAttribute="trailing" constant="8" id="dgv-Pl-Mzh"/>
+                                        <constraint firstItem="n0R-9w-SNT" firstAttribute="leading" secondItem="7ol-nt-juU" secondAttribute="trailing" constant="8" id="g5v-kY-MsO"/>
+                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="leading" secondItem="EXE-L9-n7g" secondAttribute="leading" constant="8" id="kW2-0x-qRL"/>
+                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="top" constant="8" id="lN9-Y7-B5s"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="dueDateTextField" destination="n0R-9w-SNT" id="X15-JC-DRu"/>
                                     <outlet property="gotItButton" destination="2kR-gv-2fG" id="l9S-Ch-ftn"/>
                                     <outlet property="itemLabel" destination="7ol-nt-juU" id="L9i-Dz-yeQ"/>
                                 </connections>
@@ -72,8 +85,22 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dueDatePicker" destination="OPz-nM-ijz" id="sKs-Pu-ydD"/>
+                        <outlet property="dueDateTextField" destination="n0R-9w-SNT" id="WOA-Xo-22S"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44K-ef-9Pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="OPz-nM-ijz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <date key="date" timeIntervalSinceReferenceDate="508445583.15955502">
+                        <!--2017-02-10 18:53:03 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="dueDateTapped:" destination="a8t-My-kGr" eventType="valueChanged" id="tZI-Ds-fzt"/>
+                    </connections>
+                </datePicker>
             </objects>
             <point key="canvasLocation" x="1012" y="149.77511244377811"/>
         </scene>

@@ -9,6 +9,28 @@
 import UIKit
 
 class ShoppingListTableViewController: UITableViewController, GotItButtonShoppingCellTableViewCellDelegate {
+    
+    @IBOutlet var dueDatePicker: UIDatePicker!
+ 
+    @IBOutlet weak var dueDateTextField: UITextField!
+    
+    var dueDateValue: Date?
+    var shopping: Shopping?
+    
+    private func updateValue(){
+        guard let shopping = shopping, isViewLoaded else { return }
+        dueDateTextField.text = (shopping.due as Date?)?.stringValue()
+        
+    }
+    
+    @IBAction func dueDateTapped(_ sender: Any) {
+        dueDateTextField.text = sender.date.stringValue()
+        dueDateValue = sender.date
+        
+    }
+    
+    
+    
     @IBAction func addButtonTapped(_ sender: Any) {
         
         let alertController = UIAlertController(title: "Add item to shopping List", message: "Enter an item you would like to get", preferredStyle: .alert)

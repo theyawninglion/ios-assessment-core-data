@@ -12,6 +12,7 @@ class ShoppingCellTableViewCell: UITableViewCell {
     
     weak var delegate: GotItButtonShoppingCellTableViewCellDelegate?
     
+    @IBOutlet weak var dueDateTextField: UITextField!
     @IBOutlet weak var gotItButton: UIButton!
     @IBOutlet weak var itemLabel: UILabel!
     

@@ -13,6 +13,8 @@
 		5AFCAD5A1E4E2609000B6B3B /* ShoppingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCAD591E4E2609000B6B3B /* ShoppingController.swift */; };
 		5AFCAD5E1E4E2D80000B6B3B /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCAD5D1E4E2D80000B6B3B /* ShoppingListTableViewController.swift */; };
 		5AFCAD621E4E30AC000B6B3B /* ShoppingCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCAD611E4E30AC000B6B3B /* ShoppingCellTableViewCell.swift */; };
+		5AFCAD641E4E45D8000B6B3B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCAD631E4E45D8000B6B3B /* DateHelper.swift */; };
+		5AFCAD661E4E4C0D000B6B3B /* Shopping+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCAD651E4E4C0D000B6B3B /* Shopping+CoreDataProperties.swift */; };
 		9DF1383F1E4CDE8C00AF0400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF138371E4CDE8C00AF0400 /* Assets.xcassets */; };
 		9DF138401E4CDE8C00AF0400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF138381E4CDE8C00AF0400 /* LaunchScreen.storyboard */; };
 		9DF138411E4CDE8C00AF0400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF1383A1E4CDE8C00AF0400 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		5AFCAD591E4E2609000B6B3B /* ShoppingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingController.swift; sourceTree = "<group>"; };
 		5AFCAD5D1E4E2D80000B6B3B /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		5AFCAD611E4E30AC000B6B3B /* ShoppingCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCellTableViewCell.swift; sourceTree = "<group>"; };
+		5AFCAD631E4E45D8000B6B3B /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		5AFCAD651E4E4C0D000B6B3B /* Shopping+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shopping+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9DF138371E4CDE8C00AF0400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DF138391E4CDE8C00AF0400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DF1383B1E4CDE8C00AF0400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				5AFCAD521E4E22E0000B6B3B /* ShoppingList.xcdatamodeld */,
 				5AFCAD551E4E241A000B6B3B /* CoreDataStack.swift */,
 				5AFCAD571E4E2478000B6B3B /* Shopping+Convience.swift */,
+				5AFCAD651E4E4C0D000B6B3B /* Shopping+CoreDataProperties.swift */,
 				9DF138491E4CDEB800AF0400 /* Model Controllers */,
 			);
 			name = Model;
@@ -122,6 +127,7 @@
 		9DF138491E4CDEB800AF0400 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5AFCAD631E4E45D8000B6B3B /* DateHelper.swift */,
 				5AFCAD591E4E2609000B6B3B /* ShoppingController.swift */,
 			);
 			name = "Model Controllers";
@@ -200,7 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFCAD5A1E4E2609000B6B3B /* ShoppingController.swift in Sources */,
+				5AFCAD641E4E45D8000B6B3B /* DateHelper.swift in Sources */,
 				5AFCAD581E4E2478000B6B3B /* Shopping+Convience.swift in Sources */,
+				5AFCAD661E4E4C0D000B6B3B /* Shopping+CoreDataProperties.swift in Sources */,
 				5AFCAD561E4E241A000B6B3B /* CoreDataStack.swift in Sources */,
 				9DF138431E4CDE8C00AF0400 /* AppDelegate.swift in Sources */,
 				5AFCAD541E4E22E0000B6B3B /* ShoppingList.xcdatamodeld in Sources */,
