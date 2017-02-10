@@ -8,7 +8,32 @@
 
 import UIKit
 
-class ShoppingListTableViewController: UITableViewController {
+class ShoppingListTableViewController: UITableViewController, GotItButtonShoppingCellTableViewCellDelegate {
+    @IBAction func addButtonTapped(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "Add Item to Shopping List", message: "Enter an item you would like to get", preferredStyle: .alert)
+        let cancelAlert = UIAlertAction(title: "Cancle", style: .cancel, handler: nil)
+        
+        var shoppingItemTextField: UITextField?
+        alertController.addTextField{ (textField) in
+            
+            shoppingItemTextField = textField
+            
+        }
+        let addItemAction = UIAlertAction(title: "Add item", style: .default) { (_) in
+            
+            guard let item = shoppingItemTextField?.text else {return}
+            ShoppingController.sharedController.addItem(item: item)
+            
+            self.tableView.reloadData()
+            
+        }
+        
+        alertController.addAction(cancelAlert)
+        alertController.addAction(addItemAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
     
     
     
@@ -26,16 +51,29 @@ class ShoppingListTableViewController: UITableViewController {
         return ShoppingController.sharedController.shoppingArray.count
     }
     
+    func gotItButtonTapped(sender: ShoppingCellTableViewCell) {
+        guard let shopping = sender.shopping, let indexPath = tableView.indexPath(for: sender) else {return}
+        ShoppingController.sharedController.updateItemIn(shoppingList: shopping)
+        
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "shoppingListCell", for: indexPath) as? ShoppingCellTableViewCell else {return UITableViewCell()}
         let shopping = ShoppingController.sharedController.shoppingArray[indexPath.row]
         
-        
+        cell.shopping = shopping
+        cell.delegate = self
         return cell
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            
+            let shopping = ShoppingController.sharedController.shoppingArray[indexPath.row]
+            ShoppingController.sharedController.delete(shopping: shopping)
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

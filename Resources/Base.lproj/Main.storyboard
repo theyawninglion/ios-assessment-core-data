@@ -27,31 +27,31 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ol-nt-juU">
+                                            <rect key="frame" x="59" y="8" width="300" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kR-gv-2fG">
-                                            <rect key="frame" x="323.5" y="0.0" width="43.5" height="43.5"/>
+                                            <rect key="frame" x="8" y="0.0" width="43" height="43"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="2kR-gv-2fG" secondAttribute="height" multiplier="1:1" id="bDo-wi-UMd"/>
+                                                <constraint firstAttribute="width" secondItem="2kR-gv-2fG" secondAttribute="height" multiplier="1:1" id="v1t-xg-5er"/>
                                             </constraints>
                                             <state key="normal" image="incomplete"/>
                                             <connections>
                                                 <action selector="gotItButtonTapped:" destination="yON-yH-4CP" eventType="touchUpInside" id="27V-wP-8Ao"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ol-nt-juU">
-                                            <rect key="frame" x="16" y="8" width="299.5" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="2kR-gv-2fG" secondAttribute="bottom" id="Fqd-7L-OXc"/>
-                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="top" id="RqO-TC-1YS"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="7ol-nt-juU" secondAttribute="bottom" id="S5b-2R-Zce"/>
-                                        <constraint firstAttribute="trailing" secondItem="2kR-gv-2fG" secondAttribute="trailing" constant="8" id="Ygw-PN-yDU"/>
-                                        <constraint firstItem="7ol-nt-juU" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="topMargin" id="k1J-Wb-aDb"/>
-                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="leading" secondItem="7ol-nt-juU" secondAttribute="trailing" constant="8" id="rf1-S7-Yjp"/>
-                                        <constraint firstItem="7ol-nt-juU" firstAttribute="leading" secondItem="EXE-L9-n7g" secondAttribute="leadingMargin" constant="8" id="unb-kC-oXr"/>
+                                        <constraint firstItem="7ol-nt-juU" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="topMargin" id="3rY-d3-aq3"/>
+                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="leading" secondItem="EXE-L9-n7g" secondAttribute="leading" constant="8" id="5Yg-M0-QG2"/>
+                                        <constraint firstItem="2kR-gv-2fG" firstAttribute="top" secondItem="EXE-L9-n7g" secondAttribute="top" id="JWA-y6-cgB"/>
+                                        <constraint firstItem="7ol-nt-juU" firstAttribute="bottom" secondItem="EXE-L9-n7g" secondAttribute="bottomMargin" id="QDJ-Dt-7qC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7ol-nt-juU" secondAttribute="trailing" constant="8" id="ak3-ZI-cfY"/>
+                                        <constraint firstItem="7ol-nt-juU" firstAttribute="leading" secondItem="2kR-gv-2fG" secondAttribute="trailing" constant="8" id="dkP-o7-k6U"/>
+                                        <constraint firstAttribute="bottom" secondItem="2kR-gv-2fG" secondAttribute="bottom" id="giH-rj-tgT"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -66,7 +66,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="sfh-i5-Hub">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UcM-R4-SlZ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UcM-R4-SlZ">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="a8t-My-kGr" id="Ye0-R2-cxF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44K-ef-9Pk" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,7 @@ class ShoppingCellTableViewCell: UITableViewCell {
     
     
     @IBAction func gotItButtonTapped(_ sender: Any) {
+        delegate?.gotItButtonTapped(sender: self)
     }
     var shopping: Shopping? {
         didSet{
