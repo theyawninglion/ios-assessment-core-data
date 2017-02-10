@@ -11,8 +11,8 @@ import UIKit
 class ShoppingListTableViewController: UITableViewController, GotItButtonShoppingCellTableViewCellDelegate {
     @IBAction func addButtonTapped(_ sender: Any) {
         
-        let alertController = UIAlertController(title: "Add Item to Shopping List", message: "Enter an item you would like to get", preferredStyle: .alert)
-        let cancelAlert = UIAlertAction(title: "Cancle", style: .cancel, handler: nil)
+        let alertController = UIAlertController(title: "Add item to shopping List", message: "Enter an item you would like to get", preferredStyle: .alert)
+        let cancelAlert = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         var shoppingItemTextField: UITextField?
         alertController.addTextField{ (textField) in
