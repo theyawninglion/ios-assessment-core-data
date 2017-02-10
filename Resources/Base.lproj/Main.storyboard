@@ -11,16 +11,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Shopping List Table View Controller-->
         <scene sceneID="MEN-hL-BMe">
             <objects>
-                <tableViewController id="a8t-My-kGr" sceneMemberID="viewController">
+                <tableViewController id="a8t-My-kGr" customClass="ShoppingListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wEX-0S-k2X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yON-yH-4CP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shoppingListCell" id="yON-yH-4CP" customClass="ShoppingCellTableViewCell" customModule="ShoppingList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yON-yH-4CP" id="EXE-L9-n7g">
@@ -33,6 +33,9 @@
                                                 <constraint firstAttribute="width" secondItem="2kR-gv-2fG" secondAttribute="height" multiplier="1:1" id="bDo-wi-UMd"/>
                                             </constraints>
                                             <state key="normal" image="incomplete"/>
+                                            <connections>
+                                                <action selector="gotItButtonTapped:" destination="yON-yH-4CP" eventType="touchUpInside" id="27V-wP-8Ao"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ol-nt-juU">
                                             <rect key="frame" x="16" y="8" width="299.5" height="27"/>
@@ -51,6 +54,10 @@
                                         <constraint firstItem="7ol-nt-juU" firstAttribute="leading" secondItem="EXE-L9-n7g" secondAttribute="leadingMargin" constant="8" id="unb-kC-oXr"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gotItButton" destination="2kR-gv-2fG" id="l9S-Ch-ftn"/>
+                                    <outlet property="itemLabel" destination="7ol-nt-juU" id="L9i-Dz-yeQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
